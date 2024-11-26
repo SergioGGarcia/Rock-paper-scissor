@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>Piedra, Papel o Tijeras</title>
+
+        <!-- Favicon -->
+        <link rel="icon" href="img/png-transparent-rock-paper-scissors-rock-paper-scissors-rock-paper-scissors-wizards-rps-io-scissors-game-hand-technic-thumbnail.png" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <h1>Piedra, Papel o Tijeras</h1>
+
+        <div class="botones">
+            <button onclick="jugar('piedra')">Piedra 🗿</button>
+            <button onclick="jugar('papel')">Papel &#129531;</button>
+            <button onclick="jugar('tijeras')">Tijeras &#9986;</button>
+            <button id="btnTrampas" onclick="hacerTrampas()">Trampas: Desactivado</button>
+            <button onclick="terminarJuego()">Fin</button>
+        </div>
+
+        <div id="resultado"></div>
+        <div id="historico"></div>
+
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>

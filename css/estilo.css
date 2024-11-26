@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+body {
+    background: hsla(0, 0%, 0%, .9);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: hsla(0, 0%, 0%, .9);
+    font: normal 60px Varela Round, sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    animation: move linear 2000ms infinite;
+    margin: 40px 0;
+}
+
+@keyframes move {
+    0% {
+        text-shadow:
+            4px -4px 0 hsla(0, 100%, 50%, 1),
+            3px -3px 0 hsla(0, 100%, 50%, 1),
+            2px -2px 0 hsla(0, 100%, 50%, 1),
+            1px -1px 0 hsla(0, 100%, 50%, 1),
+            -4px 4px 0 hsla(180, 100%, 50%, 1),
+            -3px 3px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+
+    25% {
+        text-shadow:
+            -4px -4px 0 hsla(180, 100%, 50%, 1),
+            -3px -3px 0 hsla(180, 100%, 50%, 1),
+            -2px -2px 0 hsla(180, 100%, 50%, 1),
+            -1px -1px 0 hsla(180, 100%, 50%, 1),
+            4px 4px 0 hsla(0, 100%, 50%, 1),
+            3px 3px 0 hsla(0, 100%, 50%, 1),
+            2px 2px 0 hsla(0, 100%, 50%, 1),
+            1px 1px 0 hsla(0, 100%, 50%, 1);
+    }
+
+    50% {
+        text-shadow:
+            -4px 4px 0 hsla(0, 100%, 50%, 1),
+            -3px 3px 0 hsla(0, 100%, 50%, 1),
+            -2px 2px 0 hsla(0, 100%, 50%, 1),
+            -1px 1px 0 hsla(0, 100%, 50%, 1),
+            4px -4px 0 hsla(180, 100%, 50%, 1),
+            3px -3px 0 hsla(180, 100%, 50%, 1),
+            2px -2px 0 hsla(180, 100%, 50%, 1),
+            1px -1px 0 hsla(180, 100%, 50%, 1);
+    }
+
+    75% {
+        text-shadow:
+            4px 4px 0 hsla(180, 100%, 50%, 1),
+            3px 3px 0 hsla(180, 100%, 50%, 1),
+            2px 2px 0 hsla(180, 100%, 50%, 1),
+            1px 1px 0 hsla(180, 100%, 50%, 1),
+            -4px -4px 0 hsla(0, 100%, 50%, 1),
+            -3px -3px 0 hsla(0, 100%, 50%, 1),
+            -2px -2px 0 hsla(0, 100%, 50%, 1),
+            -1px -1px 0 hsla(0, 100%, 50%, 1);
+    }
+
+    100% {
+        text-shadow:
+            4px -4px 0 hsla(0, 100%, 50%, 1),
+            3px -3px 0 hsla(0, 100%, 50%, 1),
+            2px -2px 0 hsla(0, 100%, 50%, 1),
+            1px -1px 0 hsla(0, 100%, 50%, 1),
+            -4px 4px 0 hsla(180, 100%, 50%, 1),
+            -3px 3px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.botones {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px;
+    font-size: 110%;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.botones button:nth-child(-n + 3) {
+    background-color: green;
+    color: white;
+}
+
+.botones button:nth-child(-n + 3):hover {
+    background-color: rgb(0, 94, 0);
+}
+
+.botones button:nth-child(3) {
+    margin-right: 50px;
+}
+
+.botones button:nth-child(4) {
+    background-color: red;
+}
+
+.botones button:nth-child(4):hover {
+    background-color: rgb(189, 0, 0);
+}
+
+.botones button:nth-child(5) {
+    background-color: rgb(0, 255, 0);
+}
+
+.botones button:nth-child(5):hover {
+    background-color: rgb(0, 194, 0);
+}
+
+#resultado {
+    width: 40%;
+    margin: 50px 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.resultado {
+    font-size: 140%;
+    font-weight: bold;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultado p:last-child {
+    margin-top: 20px;
+    font-size: 250%;
+}
+
+#historico {
+    margin-top: 50px;
+    font-size: 150%;
+}
+
+#historico p {
+    padding: 10px;
+}
+
+#resultado,
+#historico {
+    background-color: #00f7ff;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+h3,
+.historico {
+    text-align: center;
+    margin-bottom: 10px;
+}
